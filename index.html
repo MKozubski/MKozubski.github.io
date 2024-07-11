@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Michael Kozubski</h1>
-<p>A Public Repo</p>
+    <div class="container">
+        <h1>Random Picker</h1>
+        <input type="text" id="itemInput" placeholder="Enter item">
+        <button id="addItemButton">Add Item</button>
+        <ul id="itemsList"></ul>
+        <button id="chooseButton">Choose</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <script src="brains.js"></script>
 </body>
 </html>
