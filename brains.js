@@ -33,12 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateItemsList() {
       itemsList.innerHTML = '';
-      items.forEach((item, index) => {
-          const li = document.createElement('li');
-          li.textContent = item;
-          li.setAttribute('data-index', index);
-          itemsList.appendChild(li);
-      });
+      if (items.length > 0) {
+          itemsList.classList.add('with-border');
+          items.forEach((item, index) => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              li.setAttribute('data-index', index);
+              itemsList.appendChild(li);
+          });
+      } else {
+          itemsList.classList.remove('with-border');
+      }
   }
 
   function shuffleArray(array) {
