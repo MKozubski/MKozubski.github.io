@@ -1,40 +1,109 @@
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden; /* Prevent scrolling */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-  max-width: 600px;
+/* Header */
+header {
+    text-align: center;
+    background: url("background.jpg") no-repeat center center;
+    background-size: cover; /* THIS line ensures the image stretches to fill the header’s width */
+    width: 100%;            /* Ensures the header spans the full browser width */
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 20px;
-  background-color: #444;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: #444;
 }
 
-button:hover {
-  background-color: #666;
+nav button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
 }
 
-#animation-canvas {
-  display: block;
-  background-color: #111;
-  border: 2px solid #333;
-  width: 100%; /* Ensure canvas takes up full width */
-  max-width: 400px; /* Set maximum width */
-  height: auto; /* Maintain aspect ratio */
+nav button:hover {
+    background: #004999;
+}
+
+/* Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left; /* Aligns content properly */
+}
+
+/* About Section */
+.about-text {
+    text-align: left; /* No longer centered */
+}
+
+/* Skills Section - Styled Like Experience */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.skill-item {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #0066cc;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(50% - 20px); /* Two-column layout */
+    min-width: 250px;
+}
+
+/* Experience & Projects */
+.experience-container, .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience-item, .project-item {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #0066cc;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

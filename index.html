@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Hole Simulation</title>
+    <title>Michael Kozubski - Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Black Hole Simulation</h1>
-        <button id="form-star-btn">Attempt to Form a Star</button>
-        <div id="result"></div>
-        <canvas id="animation-canvas" width="400" height="400"></canvas>
-    </div>
-    <script src="science.js"></script>
+    <header>
+        <h1>Michael Kozubski</h1>
+        <p>Lead Developer | Full-Stack Engineer | Database Expert</p>
+    </header>
+
+    <nav>
+        <button onclick="loadPage('about')">About</button>
+        <button onclick="loadPage('skills')">Skills</button>
+        <button onclick="loadPage('experience')">Experience</button>
+        <button onclick="loadPage('projects')">Projects</button>
+        <button onclick="loadPage('contact')">Contact</button>
+    </nav>
+
+    <main id="content">
+        <!-- Default content loads here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Michael Kozubski. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
